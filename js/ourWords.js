@@ -52,7 +52,6 @@ document.querySelector('.hidden-word-display').textContent = finalDisplay;
 
 var counter = document.querySelector(".guesses-left").textContent= 6;
 
-//what do i need to set this as?
 var userGuess;
 
 var input = document.querySelector(".user-input").textContent = "";
@@ -77,77 +76,36 @@ function checkGuess() {
     document.querySelector(".guesses-left").textContent = --counter;
     //if user runs out of guesses, it runs the alert below and refreshes page
     if(counter <= 0) {
-    alert("still so fun, right?! Try again!");
-    window.location.reload();
-  };
-}
-
- //if user guess is correct, & they complete the word
-  // if(wordIsComplete === finalUserGuess) {
-  //alert("congrats!")
-  //window.location.reload();
-//};
+      alert("still so fun, right?! Try again!");
+      window.location.reload();
+    };
+  } else if (randomWords === dashedWord.join('')) {
+    alert("You win!");
+  }
 
   //resets input to a blank space
   document.querySelector(".user-input").value = "";
   //displays
   finalDisplay = dashedWord.join(' ');
   document.querySelector(".hidden-word-display").textContent = finalDisplay;
-  //restarts game w/ reset button- not working yet
+  //restarts game w/ reset button
   document.querySelector(".reset-button-container").value = "";
-};
-  //hidden not defined yet
-  if(hidden-word-display === dashedWord.join){
-  alert("You win!");
+
+  document.querySelector(".user-input").focus();
+
+  return false;
 };
 
 //////////////////////////////////////
           //reset game//
 ////////////////////////////////////
 
-// }else{
-//   (userGuess >= "restart");
-//   window.location.reload
-// function restartGame() {
-//
-// document.getElementById('restart').onclick = function();
-//   document.location.href(" ");
-// };
+document.getElementById('restart-button').onclick = function(){
+  location.reload();
+};
 
-// var restart = document.querySelector.location.href(" ");
-//
-//
-// function restartGame() {
-//   if(userClickRestart === document.location.href(" "){
-//
-//   }
-//
-// };
+document.querySelector('.game-guess-container').onsubmit = checkGuess;
 
-//this breaks the game
-// $('reset-button').click(function(){
-//   location.reload();
-// });
 ////////////////////////////////////////
            //end of reset//
 ///////////////////////////////////////
-
-
-////////////////////////////////////////////////
-            //congrat user//
-////////////////////////////////////////////////
-//these alerts go off before the user guesses- in other words, it's broken
-// alert(displayWord.join(" "));
-// alert("You did it, nice job smarty pants! The word was " + displayWord);
-
-//finalDisplay splits up each letter w/ a comma
-// function declaresWin() {
-//   alert(userGuess.finalDisplay.join("Nice!"));
-// }
-
-// function declaresWin() {
-//   alert("You did it, nice job!")
-// }
-/////////////////////////////////////////////////
-           //end of congrat user//
-////////////////////////////////////////////////

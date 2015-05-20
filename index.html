@@ -10,7 +10,7 @@
 
 <header>
   <div class="reset-button-container">
-    <button id="restart-button" onclick="restart()" class="cursor" > Reset </button>
+    <button id="restart-button" class="cursor" > Reset </button>
   </div>
   <h1>Our Words</h1>
   <p class="first-sentence">made with a letter at a time. </p>
@@ -19,13 +19,14 @@
   </p>
 </header>
 
+
   <p class="hidden-word-display">_ _ _ </p>
   <p class ="guesses-left-container">guesses left: <span class="guesses-left"> </span></p>
 
-<div class="game-guess-container">
+<form class="game-guess-container">
   <input onchange="guess(this.value)" class="user-input" type="text" maxlength="1" placeholder="enter a letter" >
-  <button onclick="checkGuess()" class="cursor">Guess!</button>
-</div>
+  <button class="cursor">Guess!</button>
+</form>
 
   <script src="js/ourWords.js"></script>
 
