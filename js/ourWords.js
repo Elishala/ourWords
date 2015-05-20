@@ -137,17 +137,7 @@ function checkGuess() {
 //
 // }
 //
-// function checkLetter() {
-// make array of randomWord
-// if user guess === an item of array {
-//   return user guess
-// }  else {
-//   decreaseNumberOfLives();
-//   return userguess in wrongGuessBox
-// }
-//
-// }
-//
+
 // function updateWithMatchingGuess() {
 //
 // }
