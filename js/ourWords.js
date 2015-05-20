@@ -132,20 +132,8 @@ function checkGuess() {
 //   alert(userGuess.finalDisplay.join("Nice!"));
 // }
 
-// function respondsToUser() {
-//      return var word = "the";
-//
-// }
-//
 
-// function updateWithMatchingGuess() {
-//
-// }
-//
-// function decreaseNumberOfLives() {
-//
-// }
-//
+
 // function declaresWin() {
 //   alert("You did it, nice job!")
 // }
