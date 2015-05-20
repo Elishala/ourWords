@@ -52,6 +52,7 @@ document.querySelector('.hidden-word-display').textContent = finalDisplay;
 
 var counter = document.querySelector(".guesses-left").textContent= 6;
 
+//what do i need to set this as?
 var userGuess;
 
 var input = document.querySelector(".user-input").textContent = "";
@@ -76,15 +77,16 @@ function checkGuess() {
     document.querySelector(".guesses-left").textContent = --counter;
     //if user runs out of guesses, it runs the alert below and refreshes page
     if(counter <= 0) {
-    alert("So fun, right?! Try again!");
+    alert("still so fun, right?! Try again!");
     window.location.reload();
   };
 }
 
  //if user guess is correct, & they complete the word
-// if(wordIsComplete === finalUserGuess) {
-
-//}
+  // if(wordIsComplete === finalUserGuess) {
+  //alert("congrats!")
+  //window.location.reload();
+//};
 
   //resets input to a blank space
   document.querySelector(".user-input").value = "";
@@ -135,11 +137,10 @@ function checkGuess() {
 // alert(displayWord.join(" "));
 // alert("You did it, nice job smarty pants! The word was " + displayWord);
 
-
+//finalDisplay splits up each letter w/ a comma
 // function declaresWin() {
 //   alert(userGuess.finalDisplay.join("Nice!"));
 // }
-
 
 // function declaresWin() {
 //   alert("You did it, nice job!")
