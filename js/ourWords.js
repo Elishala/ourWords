@@ -81,6 +81,11 @@ function checkGuess() {
   };
 }
 
+ //if user guess is correct, & they complete the word
+// if(wordIsComplete === finalUserGuess) {
+
+//}
+
   //resets input to a blank space
   document.querySelector(".user-input").value = "";
   //displays
@@ -91,8 +96,10 @@ function checkGuess() {
   alert("You win!");
 };
 
+//////////////////////////////////////
+          //reset game//
+////////////////////////////////////
 
-////////reset game////////////////////
 // }else{
 //   (userGuess >= "restart");
 //   window.location.reload
@@ -112,20 +119,21 @@ function checkGuess() {
 //
 // };
 
-///////////////end of reset/////////////
-
 //this breaks the game
 // $('reset-button').click(function(){
 //   location.reload();
 // });
+////////////////////////////////////////
+           //end of reset//
+///////////////////////////////////////
 
+
+////////////////////////////////////////////////
+            //congrat user//
+////////////////////////////////////////////////
 //these alerts go off before the user guesses- in other words, it's broken
 // alert(displayWord.join(" "));
 // alert("You did it, nice job smarty pants! The word was " + displayWord);
-
-
-
-
 
 
 // function declaresWin() {
@@ -133,31 +141,9 @@ function checkGuess() {
 // }
 
 
-
 // function declaresWin() {
 //   alert("You did it, nice job!")
 // }
-//
-// function declaresLose() {
-//   alert("Sorry, try again later.")
-// }
-
-// document.querySelector('.turn-count').textContent = '7';
-// document.querySelector('.game-word').textContent = '_ _ _ _ _ _';
-
-// var word = "ourWords";
-// var userGuess;
-// var dashedWord = ['_', '_', '_'];
-//
-// function updateDashDisplay(arrayToDisplay){
-//   var theText = arrayToDisplay.join('');
-//   document.querySelector('.dash-display')
-//   .textContent = theText;
-// }
-// function setGuess(guessInputValue) {
-//   userGuess = guessInputValue.toLowerCase(
-//
-//   );
-// }
-//
-// updateDashDisplay(dashedWord)
+/////////////////////////////////////////////////
+           //end of congrat user//
+////////////////////////////////////////////////
