@@ -1,0 +1,99 @@
+.cursor {
+  cursor: pointer;
+}
+
+body {
+  background-color: #86878B;
+}
+
+#reset-button {
+  text-align: center;
+  float: right;
+  margin: 1.5em 2.5em .5em .5em;
+
+}
+
+h1 {
+  color: #EFEEF3;
+  text-align: center;
+  font-size: 4.4em;
+  padding: 1.5em .5em .5em .5em;
+  text-shadow: 1.5px 1.5px 1.5px #A6A28E;
+}
+
+.first-sentence, .second-sentence {
+  color: #EFEEF3;
+  text-shadow: 1.5px 1.5px 1.5px #A6A28E;
+  font-size: 2.1em;
+  text-align: center;
+  font-family: Sans-Serif;
+
+}
+
+.encouraging-text {
+  font-style: italic;
+}
+
+.game-guess-container {
+  text-align: center;
+  padding: 1.9em .5em .5em .5em;
+
+}
+
+.user-input {
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+  color: gray;
+  background-color: #D2FDFF;
+  font-size: 1em;
+  width: 5.9em;
+}
+
+.user-input: focus {
+  box-shadow:inset 1px 1px 2px 0 #c9c9c9;
+}
+
+button {
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+  color: white;
+  background-color: #BDBCBB;
+  font-size: 1em;
+  width: 5em;
+}
+
+button: focus {
+  box-shadow:inset 1px 1px 2px 0 #c9c9c9;
+}
+
+
+.hidden-word-display {
+  text-align: center;
+  padding: .1em .5em .5em .5em;
+  font-size: 5em;
+  letter-spacing: .15em;
+
+}
+
+
+.guesses-counter {
+  text-align: center;
+  color: #EFEEF3;
+  text-shadow: 1.5px 1.5px 1.5px #A6A28E;
+  font-size: 2.1em;
+  text-align: center;
+  font-family: Sans-Serif;
+}
+
+.guesses-left-container {
+  text-align: center;
+  color: #EFEEF3;
+  text-shadow: 1.5px 1.5px 1.5px #A6A28E;
+  font-size: 2.1em;
+  text-align: center;
+  font-family: Sans-Serif;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Our Words</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/ourWords.css">
+</head>
+<body>
+<header>
+  <div class="cursor">
+    <button id="reset-button" onClick="restart()" value="restart" class="cursor" > Reset </button>
+  </div>
+  <h1>Our Words</h1>
+  <p class="first-sentence">made with a letter at a time. </p>
+    <p class= "second-sentence">You have a few chances,
+    <span class="encouraging-text"> make'm count! </span>
+  </p>
+</header>
+
+  <p class="hidden-word-display">_ _ _ </p>
+  <p class ="guesses-left-container">guesses left: <span class="guesses-left"> </span></p>
+
+<div class="game-guess-container">
+  <input onchange="guess(this.value)" class="user-input" type="text" maxlength="1" placeholder="enter a letter" >
+  <button onclick="checkGuess()" class="cursor">Guess!</button>
+
+</div>
+
+  <script src="js/ourWords.js"></script>
+
+</body>
+</html>
