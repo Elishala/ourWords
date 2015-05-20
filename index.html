@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="css/ourWords.css">
 </head>
 <body>
+
 <header>
-  <div class="cursor">
-    <button id="reset-button" onClick="restart()" value="restart" class="cursor" > Reset </button>
+  <div class="reset-button-container">
+    <button id="restart-button" onclick="restart()" class="cursor" > Reset </button>
   </div>
   <h1>Our Words</h1>
   <p class="first-sentence">made with a letter at a time. </p>
@@ -24,7 +25,6 @@
 <div class="game-guess-container">
   <input onchange="guess(this.value)" class="user-input" type="text" maxlength="1" placeholder="enter a letter" >
   <button onclick="checkGuess()" class="cursor">Guess!</button>
-
 </div>
 
   <script src="js/ourWords.js"></script>

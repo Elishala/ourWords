@@ -93,7 +93,10 @@ function checkGuess() {
   //displays
   finalDisplay = dashedWord.join(' ');
   document.querySelector(".hidden-word-display").textContent = finalDisplay;
+  //restarts game w/ reset button- not working yet
+  document.querySelector(".reset-button-container").value = "";
 };
+  //hidden not defined yet
   if(hidden-word-display === dashedWord.join){
   alert("You win!");
 };
