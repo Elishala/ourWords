@@ -76,11 +76,11 @@ function checkGuess() {
     document.querySelector(".guesses-left").textContent = --counter;
     //if user runs out of guesses, it runs the alert below and refreshes page
     if(counter <= 0) {
-      alert("still so fun, right?! Try again!");
+      alert("Even though you didn't guess the word in time, it's still so fun, right?! Try again!");
       window.location.reload();
     };
   } else if (randomWords === dashedWord.join('')) {
-    alert("You win!");
+    alert("Yay, you won!");
   }
 
   //resets input to a blank space
